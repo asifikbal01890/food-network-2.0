@@ -21,7 +21,7 @@ const TopNavBar = () => {
             </div> 
 
             {/* middle component */}
-            <div className="lg;block hidden">
+            <div className="lg:block hidden">
                 <SearchBar homepageSearch={homepageSearch}></SearchBar>
             </div>
 

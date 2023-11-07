@@ -12,12 +12,15 @@ export default function App({ Component, pageProps }: AppProps) {
     <TopNavBar></TopNavBar>
     </div>
     <div className='flex'>
-   <div className='lg:fixed z-40 h-full bg-white lg:block hidden'>
+   <div className='fixed z-40 h-full bg-white lg:block  hidden'>
    <SideNavBar></SideNavBar>
    </div>
    <div className='mt-[55px] lg:ml-[55px] mx-[15px] rounded-[24px] pt-[9px] lg:pt-[15px] lg:pl-[15px] w-full '>
     <Component className={`${inter.className} `} {...pageProps} />
    </div>
+    </div>
+    <div className='fixed bottom-0 left-0 right-0 z-50 block lg:hidden'>
+    <SideNavBar></SideNavBar>
     </div>
   </div>
 }

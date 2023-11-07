@@ -6,7 +6,7 @@ import ImgOne from '../../../public/assets/homePageImage/Thumbnail-01.png';
 import ImgTwo from '../../../public/assets/homePageImage/Thumbnail-02.png';
 const Home = ({itemName}:any) => {
     return (
-        <div className="flex mt-[15px] bg-white lg:p-11 px-[12px] py-[15px] rounded-[10px]">
+        <div className="flex mt-[15px] mb-[78px] lg:mb-3 bg-white lg:p-11 px-[12px] py-[15px] rounded-[10px]">
             {/* for laptop view */}
             <div className="mr-[42px] mt-[60px] hidden lg:block">
                 <div className="text-white bg-[#1877F2] rounded-full p-[6px]">
