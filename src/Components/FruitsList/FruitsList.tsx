@@ -1,27 +1,103 @@
 import Image from "next/image";
 import oranges from '../../../public/assets/fruitsImg/oranges.png';
 import apple from '../../../public/assets/fruitsImg/apple.png';
-import Avocado from '../../../public/assets/fruitsImg/avocado.png';
+import avocado from '../../../public/assets/fruitsImg/avocado.png';
+import FruitCard from "./FruitCard";
+
+
 const FruitsList = () => {
+
+    const fruitsInfo = [
+        {
+            name: 'Orange',
+            photo: oranges,
+            vitamin: 'Vitamin C',
+            bgColor: '#FFA42847'
+        },
+        {
+            name: 'Apple',
+            photo: apple,
+            vitamin: 'Vitamin C',
+            bgColor: '#DD4C4126'
+        },
+        {
+            name: 'Avocado',
+            photo: avocado,
+            vitamin: 'Vitamin B6',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Strawberries',
+            photo: avocado,
+            vitamin: 'Vitamin C',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Mangoes',
+            photo: avocado,
+            vitamin: 'Vitamin A, C',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Blueberries',
+            photo: avocado,
+            vitamin: 'Vitamin C, K',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Grapes',
+            photo: avocado,
+            vitamin: 'Vitamin C, K',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Pineapples',
+            photo: avocado,
+            vitamin: 'Vitamin C,K',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Papayas',
+            photo: avocado,
+            vitamin: 'Vitamin C,K',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Papayas',
+            photo: avocado,
+            vitamin: 'Vitamin C,K',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Papayas',
+            photo: avocado,
+            vitamin: 'Vitamin C,K',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Papayas',
+            photo: avocado,
+            vitamin: 'Vitamin C,K',
+            bgColor: '#687F2A26'
+        },
+        {
+            name: 'Papayas',
+            photo: avocado,
+            vitamin: 'Vitamin C,K',
+            bgColor: '#687F2A26'
+        },
+    ]
+
     return (
-        <div className="h-screen w-[300px] p-[15px] bg-white mx-4">
+        <div className="h-screen bg-white">
             <h1 className="text-sm font-medium mb-[10px] text-[#101010]">Fruits List</h1>
-           <div className="flex items-center gap-[15px] border-[1.5px] border-[#E55527] rounded-[10px] py-2 px-[10px]">
-           <div className="relative">
-            <div className="bg-[#FFA42847] origin-center rotate-45 rounded-[11px] h-[40.28px] w-[40.28px]">
-            </div>
-                <Image
-                className="absolute top-0"
-                    src={oranges}
-                    alt="menuOneIcon"
-                    width="42.52"
-                    height="42.52"
-                />
-           </div>
-           <div>
-            <h1 className="text-sm font-medium text-[#101010]">Oranges</h1>
-            <p className="text-xs text-[#101010B2] mt-2">Vitamin C</p>
-           </div>
+           <div className="overflow-y-scroll overflow-hidden h-[800px]">
+           {
+            fruitsInfo?.map((fruit:any, i:number) => <FruitCard
+            key={i}
+            fruit={fruit}
+            />)
+           }
            </div>
         </div>
     );

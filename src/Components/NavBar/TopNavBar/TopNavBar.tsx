@@ -6,6 +6,7 @@ import menuOneIcon from '../../../../public/assets/menu-01.svg';
 import SearchBar from "@/Components/ReUseComponents/SearchBar/SearchBar";
 
 const TopNavBar = () => {
+    const homepageSearch:boolean = false
     return (
         <div className="max-w-[1920px] flex justify-between items-center my-[10px] mx-[15px]">
             {/* left side */}
@@ -20,7 +21,7 @@ const TopNavBar = () => {
 
             {/* middle component */}
             <div>
-                <SearchBar></SearchBar>
+                <SearchBar homepageSearch={homepageSearch}></SearchBar>
             </div>
 
             {/* right side */}
