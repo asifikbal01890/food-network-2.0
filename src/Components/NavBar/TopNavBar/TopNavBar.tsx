@@ -4,6 +4,7 @@ import sunIcon from '../../../../public/assets/sun-01.svg';
 import nintendoIcon from '../../../../public/assets/nintendo-switch.svg';
 import menuOneIcon from '../../../../public/assets/menu-01.svg';
 import SearchBar from "@/Components/ReUseComponents/SearchBar/SearchBar";
+import { BiSearch } from "react-icons/bi";
 
 const TopNavBar = () => {
     const homepageSearch:boolean = false
@@ -20,13 +21,13 @@ const TopNavBar = () => {
             </div> 
 
             {/* middle component */}
-            <div>
+            <div className="lg;block hidden">
                 <SearchBar homepageSearch={homepageSearch}></SearchBar>
             </div>
 
             {/* right side */}
             <div className="flex gap-6">
-               <button className="border-2 border-[#E655271A] bg-[#E655271A] p-[6px] rounded-[6px]">
+               <button className="border-2 border-[#E655271A] bg-[#E655271A] p-[6px] rounded-[6px] hidden lg:block">
                   <Image
                      src={sunIcon}
                      alt="sunIcon"
@@ -34,13 +35,16 @@ const TopNavBar = () => {
                      height="20"
                   />
                 </button>
-               <button className="border-2 border-[#E655271A] bg-[#E655271A] p-[6px] rounded-[6px]">
+               <button className="border-2 border-[#E655271A] bg-[#E655271A] p-[6px] rounded-[6px] hidden lg:block">
                   <Image
                      src={nintendoIcon}
                      alt="nintendoIcon"
                      width="20"
                      height="20"
                   />
+                </button>
+                <button type='submit' className='text-2xl text-[#E55527] bg-[#E655271A] rounded-[6px] border-2 border-[#E655271A] p-[6px] block lg:hidden'>
+                    <BiSearch></BiSearch>
                 </button>
                <button className="border-2 border-[#1010101A] bg-[#1010101A] p-[6px] rounded-[6px]">
                   <Image
