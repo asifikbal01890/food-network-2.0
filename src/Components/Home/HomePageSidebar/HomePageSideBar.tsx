@@ -22,6 +22,7 @@ const HomePageSideBar = ({itemName, setItemName}:any) => {
             <FruitsList
              itemName={itemName}
              setItemName={setItemName}
+             value={value}
             ></FruitsList> 
         </div>
     );

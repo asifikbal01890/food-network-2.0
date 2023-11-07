@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const FruitCard = ({fruit, itemName, setItemName}:any) => {
     return (
-        <div onClick={() => setItemName(fruit?.name)} className={`${itemName === fruit?.name? "border-[#E55527]" : ""} flex items-center gap-[15px] border-[1.5px] hover:border-[#E55527] rounded-[10px] py-2 px-[10px] mb-[8px]`}>
+        <div onClick={() => setItemName(fruit?.name)} className={`${itemName === fruit?.name? "border-[#E55527] border-[1.5px" : "border-white"} flex items-center gap-[15px] border-[1.5px] hover:border-[#E55527] rounded-[10px] py-2 px-[10px] mb-[8px]`}>
            <div className="relative">
-            <div className={`bg-[${fruit?.bgColor}] origin-center rotate-45 rounded-[11px] h-[40.28px] w-[40.28px]`}>
+            <div className={`${fruit?.bgColor} origin-center rotate-45 rounded-[11px] h-[40.28px] w-[40.28px]`}>
             </div>
                 <Image
                 className="absolute top-0"
