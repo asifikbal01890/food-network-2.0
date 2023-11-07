@@ -15,8 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
    <div className='fixed z-40 h-full bg-white'>
    <SideNavBar></SideNavBar>
    </div>
-   <div className='mt-[55px] ml-[55px] rounded-[240px] pt-[15px] pl-[15px] w-full'>
-    <Component className={inter.className} {...pageProps} />
+   <div className='mt-[55px] ml-[55px] rounded-[24px] pt-[15px] pl-[15px] w-full '>
+    <Component className={`${inter.className} `} {...pageProps} />
    </div>
     </div>
   </div>

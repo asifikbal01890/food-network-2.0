@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function main() {
   return (
-    <div className="bg-[#EEF0F2] flex">
+    <div className={`${inter.className} bg-[#EEF0F2] flex rounded-ss-[24px]`}>
       <div>
         <HomePageSideBar></HomePageSideBar>
       </div>
