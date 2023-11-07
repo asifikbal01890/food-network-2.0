@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { PiStar, PiStarFill } from 'react-icons/pi';
 import ImgOne from '../../../public/assets/homePageImage/Thumbnail-01.png';
 import ImgTwo from '../../../public/assets/homePageImage/Thumbnail-02.png';
-const Home = () => {
+const Home = ({itemName}:any) => {
     return (
         <div className="flex mt-[15px] bg-white p-11 rounded-[10px]">
             <div className="mr-[42px] mt-[60px]">
@@ -24,7 +24,7 @@ const Home = () => {
             <div>
             <div className="flex items-start gap-[30]">
                 <div className="w-[482px]">
-                    <h1 className="text-[38px] font-black leading-[49px]">Health Benefits Of An Avocado</h1>
+                    <h1 className="text-[38px] font-black leading-[49px]">Health Benefits Of An {itemName}</h1>
                     <h3 className="mt-[25px] text-lg font-bold leading-7">Supports eye health:</h3>
                     <p className="mt-[10px] text-[15.1px] leading-6">Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.</p>
                     <h3 className="mt-[25px] text-lg font-bold leading-7">Supports eye health: </h3>

@@ -5,7 +5,7 @@ import avocado from '../../../public/assets/fruitsImg/avocado.png';
 import FruitCard from "./FruitCard";
 
 
-const FruitsList = () => {
+const FruitsList = ({ itemName, setItemName}:any) => {
 
     const fruitsInfo = [
         {
@@ -89,13 +89,15 @@ const FruitsList = () => {
     ]
 
     return (
-        <div className="h-screen bg-white">
+        <div className="bg-white">
             <h1 className="text-sm font-medium mb-[10px] text-[#101010]">Fruits List</h1>
-           <div className="overflow-y-scroll overflow-hidden h-[800px]">
+           <div className="overflow-y-scroll overflow-hidden h-[640px]">
            {
             fruitsInfo?.map((fruit:any, i:number) => <FruitCard
             key={i}
             fruit={fruit}
+            itemName={itemName}
+            setItemName={setItemName}
             />)
            }
            </div>
