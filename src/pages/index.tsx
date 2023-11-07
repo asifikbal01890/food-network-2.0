@@ -10,7 +10,7 @@ export default function main() {
   const [itemName, setItemName] = useState<string>('Avocado')
   return (
     <div className={`${inter.className} bg-[#EEF0F2] flex rounded-ss-[24px]`}>
-      <div>
+      <div className='hidden lg:block'>
         <HomePageSideBar
         itemName={itemName}
         setItemName={setItemName}
@@ -19,7 +19,7 @@ export default function main() {
       <div>
         <Home itemName={itemName}></Home>
       </div>
-      <div>
+      <div className='hidden lg:block'>
         <HomePageRightSideBar/>
       </div>
     </div>

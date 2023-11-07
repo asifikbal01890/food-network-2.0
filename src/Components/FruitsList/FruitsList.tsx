@@ -102,73 +102,73 @@ console.log(value);
             name: "Broccoli",
             photo: broccoli,
             vitamin: 'Vitamin C',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Spinach",
             photo: spinach,
             vitamin: 'Vitamin B6',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Tomatoes",
             photo: spinach,
             vitamin: 'Vitamin C',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Cucumbers",
             photo: spinach,
             vitamin: 'Vitamin A, C',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Bell Peppers",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Zucchini",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Onions",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Potatoes",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Potatoes",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Potatoes",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Potatoes",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
         {
             name: "Potatoes",
             photo: spinach,
             vitamin: 'Vitamin C, K',
-            bgColor: 'bg-[#FFA42847]'
+            bgColor: 'bg-[#687F2A26]'
         },
     ]
 

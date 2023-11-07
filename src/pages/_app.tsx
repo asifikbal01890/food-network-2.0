@@ -7,15 +7,15 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <div className='bg-white text-[#212121]'>
+  return <div className='bg-[#EEF0F2] lg:bg-white text-[#212121]'>
     <div className='fixed z-50 w-full bg-white'>
     <TopNavBar></TopNavBar>
     </div>
     <div className='flex'>
-   <div className='fixed z-40 h-full bg-white'>
+   <div className='lg:fixed z-40 h-full bg-white lg:block hidden'>
    <SideNavBar></SideNavBar>
    </div>
-   <div className='mt-[55px] ml-[55px] rounded-[24px] pt-[15px] pl-[15px] w-full '>
+   <div className='mt-[55px] lg:ml-[55px] mx-[15px] rounded-[24px] pt-[9px] lg:pt-[15px] lg:pl-[15px] w-full '>
     <Component className={`${inter.className} `} {...pageProps} />
    </div>
     </div>
