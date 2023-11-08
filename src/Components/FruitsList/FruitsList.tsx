@@ -174,7 +174,7 @@ const FruitsList = ({ itemName, setItemName, value, isOpen}:any) => {
 
     return (
         <div className="bg-white">
-            <h1 className="text-sm font-medium mb-[10px] text-[#101010]">Fruits List</h1>
+            <h1 className="text-sm font-medium mb-[10px] text-[#101010]">{value} List</h1>
           {value === 'Fruits' &&
              <div className={`${isOpen? "h-[600px]" : "h-[640px]"} -mr-2 overflow-y-scroll pr-2`}>
              {

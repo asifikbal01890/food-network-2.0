@@ -49,7 +49,7 @@ const HomePageRightSideBar = () => {
                 <h3 className="text-sm font-medium mb-[10px]">Choose Vitamin Type</h3>
                 <SelectInput></SelectInput>
                 <div className="flex items-center justify-between mt-[25px]">
-                    <h3 className="text-sm font-medium">Turn Off Subtitle</h3>
+                    <h3 className="text-sm font-medium">Turn {toggle? "On" : "Off"} Subtitle</h3>
                     <label>
                         <Switch 
                         onChange={()=> setToggle(!toggle)} 
