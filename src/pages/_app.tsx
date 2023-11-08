@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return <div className='bg-[#EEF0F2] lg:bg-white text-[#212121]'>
-    <div className='fixed z-30 w-full bg-white'>
+    <div className='fixed z-40 w-full bg-white'>
     <TopNavBar></TopNavBar>
     </div>
     <div className='flex'>
