@@ -8,8 +8,8 @@ import spinach from '../../../public/assets/vegetables/spinach.png';
 import FruitCard from "./FruitCard";
 
 
-const FruitsList = ({ itemName, setItemName, value}:any) => {
-console.log(value);
+const FruitsList = ({ itemName, setItemName, value, isOpen}:any) => {
+
     const fruitsInfo = [
         {
             name: 'Orange',
@@ -176,7 +176,7 @@ console.log(value);
         <div className="bg-white">
             <h1 className="text-sm font-medium mb-[10px] text-[#101010]">Fruits List</h1>
           {value === 'Fruits' &&
-             <div className="overflow-y-scroll overflow-hidden h-[640px]">
+             <div className={`${isOpen? "h-[600px]" : "h-[640px]"} -mr-2 overflow-y-scroll pr-2`}>
              {
               fruitsInfo?.map((fruit:any, i:number) => <FruitCard
               key={i}
@@ -188,7 +188,7 @@ console.log(value);
              </div>
           }
           {value === 'Vegetables' &&
-             <div className="overflow-y-scroll overflow-hidden h-[640px]">
+             <div className={`${isOpen? "h-[600px]" : "h-[640px]"} overflow-y-scroll -mr-2 pr-2`}>
              {
               vegetablesInfo?.map((fruit:any, i:number) => <FruitCard
               key={i}

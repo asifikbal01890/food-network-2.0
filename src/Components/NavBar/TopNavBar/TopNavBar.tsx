@@ -5,8 +5,12 @@ import nintendoIcon from '../../../../public/assets/nintendo-switch.svg';
 import menuOneIcon from '../../../../public/assets/menu-01.svg';
 import SearchBar from "@/Components/ReUseComponents/SearchBar/SearchBar";
 import { BiSearch } from "react-icons/bi";
+import { useState } from "react";
 
 const TopNavBar = () => {
+
+    const [isOpenSearch, setIsOpenSearch] = useState<boolean>(false)
+
     const homepageSearch:boolean = false
     return (
         <div className="max-w-[1920px] flex justify-between items-center my-[10px] mx-[15px]">
@@ -43,7 +47,7 @@ const TopNavBar = () => {
                      height="20"
                   />
                 </button>
-                <button type='submit' className='text-2xl text-[#E55527] bg-[#E655271A] rounded-[6px] border-2 border-[#E655271A] p-[6px] block lg:hidden'>
+                <button onClick={()=>setIsOpenSearch(!isOpenSearch)} className='text-2xl text-[#E55527] bg-[#E655271A] rounded-[6px] border-2 border-[#E655271A] p-[6px] block lg:hidden'>
                     <BiSearch></BiSearch>
                 </button>
                <button className="border-2 border-[#1010101A] bg-[#1010101A] p-[6px] rounded-[6px]">
@@ -54,6 +58,15 @@ const TopNavBar = () => {
                      height="20"
                   />
                 </button>
+                <div className={`${isOpenSearch? "block z-40 absolute left-0 top-0 bg-[#101010A6] w-full h-screen": "hidden"}`}>
+        <div className='relative w-full '>
+        <div className='absolute top-1 left-[10px] search-modal-animation'>
+        <SearchBar homepageSearch={homepageSearch}></SearchBar>
+        <div onClick={()=>setIsOpenSearch(false)} className='w-full h-screen'>
+        </div>
+        </div>
+        </div>
+      </div>
             </div>
         </div>
     );

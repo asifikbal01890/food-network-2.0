@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function main() {
   const [itemName, setItemName] = useState<string>('Avocado')
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+
+
   return (
     <div className={`${inter.className} bg-[#EEF0F2] flex rounded-ss-[24px]`}>
 
@@ -21,10 +24,24 @@ export default function main() {
         setItemName={setItemName}
         ></HomePageSideBar>
       </div>
+      
+      <div className={`${isOpen? "block z-40 absolute left-[-14px] top-[-12px] bg-[#101010A6] w-full h-screen": "hidden"}`}>
+        <div className='relative'>
+        <div className='flex justify-between absolute top-0 left-0 modal-animation w-[300px]'>
+        <HomePageSideBar
+        itemName={itemName}
+        setItemName={setItemName}
+        isOpen={isOpen}
+        ></HomePageSideBar>
+        <div onClick={()=>setIsOpen(false)} className='w-[50px]'>
+        </div>
+        </div>
+        </div>
+      </div>
       <div>
 
          {/* for movie device */}
-      <div className='flex items-center justify-between lg:hidden mt-4 bg-white px-[15px] py-[10px] rounded-[8px]'>
+      <div onClick={() => setIsOpen(!isOpen)} className='flex items-center justify-between lg:hidden mt-4 bg-white px-[15px] py-[10px] rounded-[8px]'>
         <div className='flex items-center gap-[10px]'>
           <Image
             src={foodMenuIcon}

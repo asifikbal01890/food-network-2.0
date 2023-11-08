@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+.modal-animation{
+  width: 100%;
+  animation: move 1s none;
+
+}
+@keyframes move{
+  from {left: -140px;}
+  to {left: 0px;}
+}
+.search-modal-animation{
+  width: 100%;
+  animation: search 0.5s none;
+
+}
+@keyframes search{
+  from {top: -40px;}
+  to {top: 4px;}
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.194); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
